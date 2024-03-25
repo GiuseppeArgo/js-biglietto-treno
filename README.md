@@ -7,11 +7,16 @@
         risultatoKm = prezzo in base ai km        
     
     Se il cliente è minorenne applichiamo uno sconto del 20 %
-        risultato = risultatoKm * 0.20
+        sconto = risultatoKm * 0.20
     Altrimenti se il cliente è over 65 applichiamo uno sconto del 40%
-        risultato = risultatoKm * 0.40
+        sconto = risultatoKm * 0.40
     Altrimenti non applichiamo uno sconto
-        risultato = risultatoKm
+        sconto = risultatoKm
+
+    - [ ] Se il cliente ha diritto a sconto calcoliamo il prezzo
+        risultato = risultatoKm - sconto
+    Altrimenti
+        risultato = risultatoKm    
 
 3. OUTPUT
     - [ ] Stampiamo : risultato
