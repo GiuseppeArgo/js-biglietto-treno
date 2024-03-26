@@ -1,5 +1,5 @@
 1. INPUT
-    - [x] Chiediamo all'utente il numero di chilometri che vuole       percorrere
+    - [x] Chiediamo all'utente il numero di chilometri che vuole  percorrere
     - [x] Chiediamo all'utente l'età del passeggero
 
 2. ESECUZIONE LOGICA 
@@ -11,7 +11,7 @@
     Altrimenti se il cliente è over 65 applichiamo uno sconto del 40%
         sconto = risultatoKm * 0.40
     Altrimenti non applichiamo uno sconto
-        sconto = risultatoKm
+        sconto = 0
 
     - [x] Se il cliente ha diritto a sconto calcoliamo il prezzo
         risultato = risultatoKm - sconto
