@@ -2,11 +2,11 @@
 
 // Con un prompt chiediamo al cliente i km che vuole porcorrere
 
-let kmPercorsi = prompt ("Quanti Km vuoi percorrere?"); //string
+let userKm = prompt ("Quanti Km vuoi percorrere?"); //string
 
-kmPercorsi = parseInt(kmPercorsi);
+userKm = parseInt(userKm);
 
-console.log(kmPercorsi, typeof kmPercorsi);
+console.log(userKm, typeof userKm);
 
 // Con un prompt chiediamo al cliente l'età del passeggero
 
@@ -20,19 +20,19 @@ console.log(userAge, typeof userAge);
 
 // Calcoliamo il prezzo del biglietto in base ai km
 
-const risultatoKm = kmPercorsi * 0.21;
+const priceKm = userKm * 0.21;
 
-console.log(risultatoKm, typeof risultatoKm)
+console.log(priceKm, typeof priceKm)
 
 //Calcoliamo lo sconto
 
 let discount = "";
 
 if (userAge < 18){
-    discount = risultatoKm * 0.20
+    discount = priceKm * 0.20
     console.log(discount, typeof discount);
 } else if (userAge > 65) {
-    discount = risultatoKm * 0.40
+    discount = priceKm * 0.40
     console.log(discount,typeof discount);
 } else {
     discount = 0;
@@ -40,7 +40,7 @@ if (userAge < 18){
 
 //Calcoliamo il prezzo del biglietto
 
-const price = risultatoKm - discount;
+const price = priceKm - discount;
 
 console.log (price, typeof price)
 
